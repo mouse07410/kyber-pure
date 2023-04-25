@@ -1,6 +1,5 @@
 /target
 Cargo.lock
-/.vscode
 /tests/rand_bufs/generate
 package-lock.json
 /tests/KAT/tvecs*

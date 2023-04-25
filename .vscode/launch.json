@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'ffi'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=ffi",
+                    "--package=ffi"
+                ],
+                "filter": {
+                    "name": "ffi",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "terminal": "integrated",
+            "sourceMap": { "/rustc/6c2484dc3c532c052f159264e970278d8b77cdc9/src":
+                "${env:HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+            },
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'ffi'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=ffi",
+                    "--package=ffi"
+                ],
+                "filter": {
+                    "name": "ffi",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "terminal": "integrated",
+            "sourceMap": { "/rustc/6c2484dc3c532c052f159264e970278d8b77cdc9/src":
+                "${env:HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+            },
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

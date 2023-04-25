@@ -1,0 +1,89 @@
+{
+    "files.associations": {
+        "memory.h": "c",
+        "string.h": "c",
+        "awesome_library.h": "c"
+    },
+    "C_Cpp.clang_format_sortIncludes": false,
+    "C_Cpp.default.includePath": [
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
+        "/opt/local/include",
+        "/usr/local/include",
+        "${workspaceRoot}"
+    ],
+    "C_Cpp.default.defines": [],
+    "C_Cpp.errorSquiggles": "Enabled",
+    "cSpell.words": [
+        "Clangd",
+        "ICSX",
+        "JNOF",
+        "ffi",
+        "libc"
+    ],
+    "actionButtons": {
+        "commands": [
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo check",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo check"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo clippy",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo clippy"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo build",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo build --release"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo run",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo run --release"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo test",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo test"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo update",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo update"
+            },
+            {
+                "cwd": "${workspaceFolder}",
+                "name": "Cargo clean",
+                "color": "white",
+                "singleInstance": true,
+                "command": "cargo clean"
+            }
+        ]
+    },
+    "spellchecker.ignoreWordsList": [
+        "bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4",
+        "libc"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:rust-class-ffi}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
+
+}
