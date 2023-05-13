@@ -1,4 +1,6 @@
-#![cfg(feature = "benchmarking")] // Lint
+#![cfg(feature = "benchmarking")] use std::println;
+
+// Lint
 use criterion::{criterion_group, criterion_main, Criterion};
 use pqc_kyber::*;
 
@@ -66,8 +68,4 @@ pub fn decode_hex(s: &str) -> Vec<u8> {
     .step_by(2)
     .map(|i| u8::from_str_radix(&s[i..i + 2], 16).expect("Hex string decoding"))
     .collect::<Vec<u8>>()
-}
-
-fn main () {
-
 }
