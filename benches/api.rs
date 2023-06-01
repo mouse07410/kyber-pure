@@ -69,3 +69,8 @@ pub fn decode_hex(s: &str) -> Vec<u8> {
     .map(|i| u8::from_str_radix(&s[i..i + 2], 16).expect("Hex string decoding"))
     .collect::<Vec<u8>>()
 }
+
+pub fn main() {
+    // Your program will start here.
+    println!("Hello world!");
+}
