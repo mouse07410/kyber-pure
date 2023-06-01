@@ -124,6 +124,7 @@
 
 // Prevent usage of mutually exclusive features
 #[cfg(all(feature = "kyber1024", feature = "kyber512"))]
+
 compile_error!("Only one security level can be specified");
 
 #[cfg(all(target_arch = "x86_64", feature = "avx2"))] 
